@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
-<link rel="stylesheet" href="reset.css">
-<link rel="stylesheet" href="styles.css">
 <body>
-    <div class="paper">
-        <div class="tag">
-        <h1>HELLO</h1>
-        <h2>my name is</h2>
-        <p>Libbi Dunham</p>
-        </div>
-
-    </div>
-  </body>
-
+    <section class="inputs">
+        <label>
+          Name:
+          <input id="name-input">
+        </label>
+        <button id="update-button">Update</button>
+      </section>
     
+      <div class="paper">
+        <p class="name-tag">
+          <strong class="greeting">HELLO</strong>
+          my name is
+          <em id="name" class="name">Libbi Dunham</em>
+        </p>
+      </div>
+<script src="app.js" type="module"></script>
 </body>
 </html>
